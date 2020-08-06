@@ -10,8 +10,14 @@
 </head>
 <body>
     <h3>Web Components Tut</h3>
-    <user-card name="mewko" avatar='https://randomuser.me/api/portraits/women/35.jpg'></user-card>
-    <user-card name="delco" avatar='https://randomuser.me/api/portraits/men/25.jpg'></user-card>
+    <user-card name="mewko" avatar='https://randomuser.me/api/portraits/women/35.jpg'>
+        <div slot="email">mewko@gmail.com</div>
+        <div slot="phone">(619) 555-2334</div>
+    </user-card>
+    <user-card name="delco" avatar='https://randomuser.me/api/portraits/men/25.jpg'>
+        <div slot="email">delco@gmail.com</div>
+        <div slot="phone">(619) 333-1234</div>
+    </user-card>
 
     <script src="userCard.js"></script>
 </body>
